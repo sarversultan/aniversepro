@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cosmic background -->
+  <rect width="200" height="200" rx="100" fill="#180C60"/>
+  <!-- Vibrant gradient ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="url(#ring-gradient)" stroke-width="10"/>
+  <!-- Glassy inner circle -->
+  <circle cx="100" cy="100" r="70" fill="url(#glass-gradient)" opacity="0.85"/>
+  <!-- Stylized A with play triangle (negative space) -->
+  <g filter="url(#glow)">
+    <path d="M100 60 L135 140 H120 L110 115 H90 L80 140 H65 L100 60 Z" fill="url(#a-gradient)"/>
+    <polygon points="100,85 110,110 90,110" fill="#180C60"/>
+  </g>
+  <!-- Cosmic particles -->
+  <circle cx="60" cy="60" r="2" fill="#F9B3E1"/>
+  <circle cx="140" cy="50" r="1.5" fill="#00C1E1"/>
+  <circle cx="160" cy="120" r="1.8" fill="#EC00D0"/>
+  <circle cx="50" cy="150" r="1.2" fill="#00E0AC"/>
+  <circle cx="120" cy="170" r="1.5" fill="#E3C1FA"/>
+  <circle cx="80" cy="170" r="1.1" fill="#D0C1EA"/>
+  <defs>
+    <linearGradient id="ring-gradient" x1="30" y1="30" x2="170" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4A2F9B"/>
+      <stop offset="30%" stop-color="#00C1E1"/>
+      <stop offset="60%" stop-color="#F9B3E1"/>
+      <stop offset="100%" stop-color="#EC00D0"/>
+    </linearGradient>
+    <radialGradient id="glass-gradient" cx="0" cy="0" r="1" gradientTransform="translate(100 100) scale(70)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E3C1FA" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#280053" stop-opacity="0.95"/>
+    </radialGradient>
+    <linearGradient id="a-gradient" x1="100" y1="60" x2="100" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F9B3E1"/>
+      <stop offset="50%" stop-color="#00C1E1"/>
+      <stop offset="100%" stop-color="#4A2F9B"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="200" height="200" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#F9B3E1" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00C1E1" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+</svg> 
